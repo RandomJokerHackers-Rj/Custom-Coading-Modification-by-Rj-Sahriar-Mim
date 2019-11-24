@@ -56,6 +56,85 @@ function igpreview()
 }
 
 ========================================================================
+<div class="container">
+<div class="iframe-css">
+<div class="iframe-main">
+<label> <span>name :</span>
+<input name="ignamee" type="text" value="myiFrame" /> </label>
+<label class="igwidth"> <span>width:</span>
+<input name="igwidth" type="text" value="600" /> </label>
+<label class="igheight"> <span>height:</span>
+<input name="igheight" type="text" value="400" /> </label>
+<label class="igsizetype">
+<select name="igsizetype">
+<option value="px" />px
+<option value="%" />% </select>
+</label>
+<div class="clear"></div><span class="options">Options</span>
+<div class="clear"></div>
+<label class="scrollbar"><span>scrollbar:</span>
+<select name="igscroll">
+<option value="no" />no
+<option value="yes" />yes</select>
+</label>
+<label class="marginWidth"><span>marginWidth:</span>
+<input name="igmarwidth" type="text" value="0" />
+</label>
+<label class="marginHeight"><span>marginHeight:</span>
+<input name="igmarheight" type="text" value="0" />
+</label>
+<div class="clear"></div>
+<label class="border"><span>border:</span>
+<select name="igborder">
+<option value="1" />Yes
+<option value="0" />No </select>
+</label>
+<label class="border-type"><span>borderType:</span>
+<select name="igbortype">
+<option value="none" />none
+<option value="hidden" />hidden
+<option value="solid" />solid
+<option value="dotted" />dotted
+<option value="dashed" />dashed </select>
+</label>
+<label class="border-type"><span>borderSize:</span>
+<select name='igborsize'>
+<option value="0" />0px
+<option value="1" />1px
+<option value="2" />2px
+<option value="3" />3px
+<option value="4" />4px
+<option value="5" />5px
+<option value="6" />6px
+<option value="7" />7px
+<option value="8" />8px
+<option value="9" />9px
+<option value="10" />10px </select>
+</label>
+<label class="igborcolor"><span>borderColor:</span>
+<input name="igborcolor" type="text" value="ffffff" />
+</label>
+<div class="clear">
+</div>
+<label class="iframe-url"><span>iFrameURL:</span>
+<input name="igurl" type="text" placeholder="https://" />
+</label> 
+
+<a class="btn icon icon-code" onclick="javascript:makingdifferentcodegen();">Generate</a><a class="btn icon icon-link-ext" onclick="javascript:igpreview();">Preview</a>
+<div class="clear">
+</div>
+<span style="width: 200px;
+                color: #03a712;">iFrame Generated Code</span>
+<label class="iframe-gen">
+
+<textarea class='textareaBox' name='igcode' id="ifcode" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" style=' background:#ffffff;color:#03a712' readonly='readonly' name='tbox'></textarea>
+</label>
+</div>
+<button class="copyit">Copy It</button>
+
+<div class="sharethis-inline-share-buttons" style="padding: 15px;clear: both;"></div>
+</div>
+
 ==========================Unpacked Out==================================
 ========================================================================
 ========================================================================
@@ -97,7 +176,6 @@ function igpreview()
 	" width="'+c+'" height="'+b+'" src="'+a+'" scrolling="'+l+'" frameborder="'+e+'" allowfullscreen></iframe>')
 }
 
-
-
-
-Custom Coading Modification by Rj Sahriar Mim
+========================================================================
+          Custom Coading Modification by Rj Sahriar Mim
+========================================================================
