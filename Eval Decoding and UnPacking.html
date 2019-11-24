@@ -56,37 +56,46 @@ function igpreview()
 }
 
 ========================================================================
+==========================Unpacked Out==================================
 ========================================================================
 ========================================================================
-========================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function makingdifferentcodegen()
+	{
+	var a=document.getElementsByName("igurl")[0].value;
+	var b=document.getElementsByName("igheight")[0].value;
+	var c=document.getElementsByName("igwidth")[0].value;
+	var d=document.getElementsByName("ignamee")[0].value;
+	var e=document.getElementsByName("igborder")[0].value;
+	var f=document.getElementsByName("igborsize")[0].value;
+	var g=document.getElementsByName("igborcolor")[0].value;
+	var h=document.getElementsByName("igbortype")[0].value;
+	var i=document.getElementsByName("igmarheight")[0].value;
+	var j=document.getElementsByName("igmarwidth")[0].value;
+	var k=document.getElementsByName("igsizetype")[0].value;
+	var l=document.getElementsByName("igscroll")[0].value;
+	var m=document.getElementsByName("igcode")[0];
+	m.value="<iframe src=\""+a+"\" style=\"border:"+f+"px #"+g+" "+h+";
+	\" name=\""+d+"\" scrolling=\""+l+"\" frameborder=\""+e+"\" marginheight=\""+i+"px\" marginwidth=\""+j+"px\" height=\""+b+""+k+"\" width=\""+c+""+k+"\" allowfullscreen><\/iframe>"
+}
+function igpreview()
+	{
+	var a=document.getElementsByName("igurl")[0].value;
+	var b=document.getElementsByName("igheight")[0].value;
+	var c=document.getElementsByName("igwidth")[0].value;
+	var d=document.getElementsByName("ignamee")[0].value;
+	var e=document.getElementsByName("igborder")[0].value;
+	var f=document.getElementsByName("igborsize")[0].value;
+	var g=document.getElementsByName("igborcolor")[0].value;
+	var h=document.getElementsByName("igbortype")[0].value;
+	var i=document.getElementsByName("igmarheight")[0].value;
+	var j=document.getElementsByName("igmarwidth")[0].value;
+	var k=document.getElementsByName("igsizetype")[0].value;
+	var l=document.getElementsByName("igscroll")[0].value;
+	var m=document.getElementsByName("igcode")[0];
+	var n=window.open();
+	n.document.write('<iframe style="border:'+f+'px #'+g+' '+h+';
+	" width="'+c+'" height="'+b+'" src="'+a+'" scrolling="'+l+'" frameborder="'+e+'" allowfullscreen></iframe>')
+}
 
 
 
