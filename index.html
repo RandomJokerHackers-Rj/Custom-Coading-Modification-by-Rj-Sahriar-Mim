@@ -1,0 +1,296 @@
+/* Created by, Rj Sahriar Mim. Please Don't try to Copy/Use my any Kinds of Coading's without my Permission Otherwise.!!*/
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js?ver=1.11.2'></script>
+<style>
+        @font-face{font-family: "Open Sans Light";
+font-style: normal;font-weight: 300;
+src: local("Segoe UI Light"), local("Open Sans Light"), local("OpenSans-Light"), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTZ1r3JsPcQLi8jytr04NNhU.woff) format('woff')}
+@font-face{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 400;src: local("Segoe UI"), local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff')}
+body{
+    background:#f3f5f8;
+    margin: 0;
+    padding: 0;
+font-family: "Segoe UI", "Open Sans", sans-serif, serif;
+font-size: 0.875rem;
+line-height: 1.4;font-weight: 400;font-style: normal}
+.clear{clear: both}
+.container{max-width:1035px;
+margin:0 auto;}
+@font-face {
+  font-family: 'fontello';
+  src: url('font/fontello.eot?36590906');
+  src: url('font/fontello.eot?36590906#iefix') format('embedded-opentype'),
+       url('font/fontello.svg?36590906#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('data:application/octet-stream;base64,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') format('woff'),
+       url('data:application/octet-stream;base64,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') format('truetype');
+} 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-link-ext:before { content: '\f08e'; } /* '?' */
+.icon-code:before { content: '\f121'; } /* '?' */
+.iframe-css{
+    margin-top:5px;
+    padding-bottom:15px;
+max-width: 720px;
+float: left;
+height: auto;
+background:#fff;
+-webkit-box-shadow: 1px 2px 4px 0 rgba(0,0,0,.21);
+    -moz-box-shadow: 1px 2px 4px 0 rgba(0,0,0,.21);
+    box-shadow: 1px 2px 4px 0 rgba(0,0,0,.21);
+}
+h1{font: 400 2.75rem/1.2 "Segoe UI", "Open Sans", sans-serif, serif}
+.site-branding-text {
+    background: #074ba0;
+    padding: 2px 0 10px 0;
+    color: #FFF;
+    text-align: center;
+}
+p.site-title {
+    margin: 0;
+}
+.site-title a {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    opacity: .9;text-decoration: none;
+}
+p.site-description {
+    font-size: 14px;
+    color: #2e92cf;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.links{clear:both;padding: 25px;color: #777;}
+.links a {
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+    color: #777;
+}
+.links a:hover {
+    color: #d8594b;text-decoration: underline;
+}
+.iframe-main{padding:10px 15px}
+.iframe-main label{width:210px;float:left;margin-right:5px;color:#444;margin: 5px 0;line-height:23px}
+.iframe-main span{float:left;width:100px;font-weight: 300;}
+.iframe-main input{float:left;width:88px;padding:0 5px;
+background: #f3f5f8;
+border: none;
+border-radius: 3px;
+height: 35px;
+font-size: 14px;
+line-height:15px;
+outline: 0;
+-webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2)}
+.iframe-main .igheight,.iframe-main .igwidth{width:175px}
+.iframe-main .igheight input,.iframe-main .igwidth input,
+.iframe-main .igsizetype{width:60px}
+.iframe-main select{width:100px;border: 1px solid #e5e5e5;font-size: 14px;background: #fbfbfb;height: 35px;line-height:15px;outline: 0;
+-webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2)}
+.iframe-main .igsizetype select{width:60px}
+.options{width: 100% !important;display: block;padding: 5px;color: #555;margin: 0 0 10px 0;border-bottom: 1px solid #d9d9d9}
+.iframe-main label.iframe-url{width: 100%}
+.iframe-url input{width: 99%}
+.iframe-css input:focus,
+.iframe-css textarea:focus,
+.iframe-css select:focus,
+.iframe-css input:hover,
+.iframe-css textarea:hover,
+.iframe-css select:hover{outline: 0}
+.iframe-css label.iframe-gen{width:100%}
+.iframe-css .iframe-gen textarea{      padding: 10px;  font-family: "Segoe UI", "Open Sans", sans-serif, serif;width: 98%;height: 100px;
+border: 1px solid #e5e5e5;background: #fbfbfb;
+font-size:16px;line-height:1.5;outline: 0;
+-webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+font-weight: 500;
+    color: #777;
+}
+.sideads{
+    width: 300px;
+    height: 600px;
+    float: left;
+    margin-top: 5px !important;
+    margin-left: 15px !important;
+}
+.btn{
+    float: right;
+    margin-left: 5px;
+    background: #03a712;
+    box-shadow: 0px 1px 2px #bbbbbb;
+    color: #fff;
+    font-size: 17px;
+    padding: 12px 13px;
+    text-decoration: none;
+    cursor: pointer;
+    backface-visibility: hidden;
+}
+.btn:hover,.copyit:hover{background: #008a0d;}
+
+.dec{
+    font-weight: 300;
+}.entry-title {
+    backface-visibility: hidden;clear: both;
+}
+.copyit{
+    float: right;
+    margin-right: 12px;
+    margin-top: -10px;
+    border: none;
+    display: inline-block;
+    padding: 10px 21px;
+    background: #03a712;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:680px){
+    .site-title a{font-size: 20px}
+    p.site-description {
+    font-size: 8px;
+}
+.iframe-main span {
+    font-size: 10px;
+}
+.iframe-main span {
+    width: 70px;
+}
+.iframe-main input,.iframe-main select {
+    height: 25px;
+    font-size: 10px;
+}
+    .container,.iframe-css,.iframe-css label.iframe-gen,.iframe-main label{width:100%}
+    .iframe-main .igheight{width: 128px}
+    .iframe-main .igheight span{width: 52px}
+    .iframe-css label.iframe-gen textarea{width: 94%}
+    .iframe-url input{width: 90%}
+    .entry-title{font-size:2rem}
+}
+#sd108{z-index:999999;position:fixed!important;position:absolute;bottom:0px;left:0;width:100%;height:auto;background-color:#fff;opacity:0.9;filter:alpha(opacity=90);display:block}#sd108 p{opacity:1;filter:none;font:bold 20px Verdana,Arial,sans-serif;text-align:center;margin:5% 0}#g207 p a,#sd108 p i{font-size:12px}
+</style>
+</head>
+
+<div class="container">
+<div class="iframe-css">
+<div class="iframe-main">
+<label> <span>name :</span>
+
+<input name="ignamee" type="text" value="myiFrame" /> </label>
+<label class="igwidth"> <span>width:</span>
+<input name="igwidth" type="text" value="600" /> </label>
+<label class="igheight"> <span>height:</span>
+<input name="igheight" type="text" value="400" /> </label>
+<label class="igsizetype">
+<select name="igsizetype">
+<option value="px" />px
+<option value="%" />% </select>
+</label>
+<div class="clear"></div><span class="options">Options</span>
+<div class="clear"></div>
+<label class="scrollbar"><span>scrollbar:</span>
+<select name="igscroll">
+<option value="no" />no
+<option value="yes" />yes</select>
+</label>
+<label class="marginWidth"><span>marginWidth:</span>
+<input name="igmarwidth" type="text" value="0" />
+</label>
+<label class="marginHeight"><span>marginHeight:</span>
+<input name="igmarheight" type="text" value="0" />
+</label>
+<div class="clear"></div>
+<label class="border"><span>border:</span>
+<select name="igborder">
+<option value="1" />Yes
+<option value="0" />No </select>
+</label>
+<label class="border-type"><span>borderType:</span>
+<select name="igbortype">
+<option value="none" />none
+<option value="hidden" />hidden
+<option value="solid" />solid
+<option value="dotted" />dotted
+<option value="dashed" />dashed </select>
+</label>
+<label class="border-type"><span>borderSize:</span>
+<select name='igborsize'>
+<option value="0" />0px
+<option value="1" />1px
+<option value="2" />2px
+<option value="3" />3px
+<option value="4" />4px
+<option value="5" />5px
+<option value="6" />6px
+<option value="7" />7px
+<option value="8" />8px
+<option value="9" />9px
+<option value="10" />10px </select>
+</label>
+<label class="igborcolor"><span>borderColor:</span>
+<input name="igborcolor" type="text" value="ffffff" />
+</label>
+<div class="clear"></div>
+<label class="iframe-url"><span>iFrameURL:</span>
+<input name="igurl" type="text" placeholder="https://" />
+</label> <a class="btn icon icon-code" onclick="javascript:makingdifferentcodegen();">Generate</a><a class="btn icon icon-link-ext" onclick="javascript:igpreview();">Preview</a>
+<div class="clear"></div>
+<span style="width: 200px;
+                color: #03a712;">iFrame Generated Code</span>
+<label class="iframe-gen">
+
+<textarea class='textareaBox' name='igcode' id="ifcode" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" style=' background:#ffffff;color:#03a712' readonly='readonly' name='tbox'></textarea>
+</label>
+</div>
+
+<button class="copyit">Copy It</button>
+
+<div class="sharethis-inline-share-buttons" style="padding: 15px;clear: both;"></div>
+</div>
+
+<script>
+            eval(function (p, a, c, k, e, r) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('8 L(){2 a=1.3("v")[0].4;2 b=1.3("r")[0].4;2 c=1.3("B")[0].4;2 d=1.3("o")[0].4;2 e=1.3("t")[0].4;2 f=1.3("x")[0].4;2 g=1.3("7")[0].4;2 h=1.3("9")[0].4;2 i=1.3("p")[0].4;2 j=1.3("q")[0].4;2 k=1.3("s")[0].4;2 l=1.3("u")[0].4;2 m=1.3("w")[0];m.4="<5 y=\\""+a+"\\" z=\\"A:"+f+"6 #"+g+" "+h+";\\" J=\\""+d+"\\" D=\\""+l+"\\" E=\\""+e+"\\" I=\\""+i+"6\\" H=\\""+j+"6\\" G=\\""+b+""+k+"\\" F=\\""+c+""+k+"\\" C><\\/5>"}8 K(){2 a=1.3("v")[0].4;2 b=1.3("r")[0].4;2 c=1.3("B")[0].4;2 d=1.3("o")[0].4;2 e=1.3("t")[0].4;2 f=1.3("x")[0].4;2 g=1.3("7")[0].4;2 h=1.3("9")[0].4;2 i=1.3("p")[0].4;2 j=1.3("q")[0].4;2 k=1.3("s")[0].4;2 l=1.3("u")[0].4;2 m=1.3("w")[0];2 n=M.N();n.1.O(\'<5 z="A:\'+f+\'6 #\'+g+\' \'+h+\';" F="\'+c+\'" G="\'+b+\'" y="\'+a+\'" D="\'+l+\'" E="\'+e+\'" C></5>\')}', 51, 51, '|document|var|getElementsByName|value|iframe|px|igborcolor|function|igbortype|||||||||||||||ignamee|igmarheight|igmarwidth|igheight|igsizetype|igborder|igscroll|igurl|igcode|igborsize|src|style|border|igwidth|allowfullscreen|scrolling|frameborder|width|height|marginwidth|marginheight|name|igpreview|makingdifferentcodegen|window|open|write'.split('|'), 0, {}))   
+            $(".copyit").click(function(){
+    $("textarea").select();
+    document.execCommand('copy');
+});
+</script>
+
